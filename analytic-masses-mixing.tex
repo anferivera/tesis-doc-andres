@@ -1,0 +1,84 @@
+\section{Analytic formulas for masses and mixing matrix of neutral fermions}
+\label{sec:analyt-form-mass}
+
+The characteristic equation of the mass matrix~\eqref{eq:Mchi}
+is~\cite{Cheung:2013dua}\footnote{The analytic formulas for the neutralino
+  masses and the neutralino mixing matrix was
+  analyzed in \cite{ElKheishen:1992yv}.}:
+\begin{align}
+\left[\left({M}^{\chi}_{\text{diag}}\right)_{ii}^2-M_D^2\right]
+\left[M_N-\left({M}^{\chi}_{\text{diag}}\right)_{ii}^{\phantom{2}}
+\right]
++\tfrac{1}{2}m_{\lambda}^2\left[\left({M}^{\chi}_{\text{diag}}\right)_{ii}+M_D\sin 2\beta
+\right]=0\,.
+\label{eq:characteristic-equation}
+\end{align}
+The solutions to the cubic equation in  $\left({M}^{\chi}_{\text{diag}}\right)_{ii}$ are:
+\begin{align}
+m_1^\chi=&z_2+\dfrac{M_N}{3}\,,&
+m_2^\chi=&z_1+\dfrac{M_N}{3}\,, &
+m_3^\chi=&z_3+\dfrac{M_N}{3}\,.
+\end{align}
+where
+\begin{align}
+z_1&=\left(-\dfrac{q}{2}+\sqrt{\frac{q^2}{4}+\frac{p^3}{27}}\right)^{1/3} + \left(-\dfrac{q}{2}-\sqrt{\dfrac{q^2}{4}+\dfrac{p^3}{27}}\right)^{1/3}\nonumber\\ 
+z_2&=-\frac{z_1}{2}+\sqrt{\frac{z_1^2}{4}+\frac{q}{z_1}} \nonumber\\ 
+z_3&=-\frac{z_1}{2}-\sqrt{\frac{z_1^2}{4}+\frac{q}{z_1}}\nonumber\\ 
+p&=-\frac{1}{3}M_N^2-\left(M_D^2+m_{\lambda}^2\right)  \nonumber\\ 
+q&=-\frac{2}{27}M_N^3-\frac{1}{3}M_N\left(M_D^2+m_{\lambda}^2\right)+\left[M_NM_D^2-m_{\lambda}^2\sin(2\beta) M_D\right].
+\end{align}
+
+Notice that ${q^2}/{4}+{p^3}/{27} < 0$ and therefore, we have three real masses $m_i^\chi$ $(i=1,2,3)$.
+
+Expanding the eigensystem in eq.~\eqref{eq:chidiag} by  assuming  that ${N}_{1i}\neq 0$, we have 
+
+\begin{align*}
+{M}^{\chi}_{21}\frac{{N}_{2i}}{{N}_{1i}}+{M}^{\chi}_{31}\frac{{N}_{3i}}{{N}_{1i}}&=-({M}^{\chi}_{11}-m_i^\chi)\nonumber \\
+({M}^{\chi}_{22}-m_i^\chi)\frac{{N}_{2i}}{{N}_{1i}}+{M}^{\chi}_{32}\frac{{N}_{3i}}{{N}_{1i}}&=-{M}^{\chi}_{12} \nonumber\\
+{M}^{\chi}_{23}\frac{{N}_{2i}}{{N}_{1i}}+({M}^{\chi}_{33}-m_i^\chi)\frac{{N}_{3i}}{{N}_{1i}}&=-{M}^{\chi}_{13}\,,
+\end{align*}
+where
+\begin{align}
+\label{eq:N1i}
+{N}_{1i}=\left[1+\left(\frac{{N}_{2i}}{{N}_{1i}}\right)^2+\left(\frac{{N}_{3i}}{{N}_{1i}}\right)^2\right]^{-1/2}.
+\end{align}
+
+Using the matrix $\textbf{M}^{\chi}$ given in the eq. \eqref{eq:Mchi}, we get the ratios
+
+\begin{align}
+\label{eq:exNmn}
+\frac{{N}_{2i}}{{N}_{1i}}
+&=-\frac{m_{\lambda} \cos\beta}{m_i^\chi}+\frac{M_D}{m_i^\chi}\frac{[m_i^\chi(M_N-m_i^\chi)+m_{\lambda}^2\cos\beta^2 ]}{m_{\lambda}(m_i^\chi\sin\beta +M_D\cos\beta )}\,, \nonumber\\  
+\frac{{N}_{3i}}{{N}_{1i}}
+&=-\frac{[m_i^\chi(M_N-m_i^\chi)+m_{\lambda}^2 \cos\beta^2]}{m_{\lambda} (m_i^\chi\sin\beta+M_D\cos\beta)}.
+\end{align}
+
+
+\subsection{Approximate mixing matrix}
+By using the analytical expressions for the mixing ratios of
+eq.~\eqref{eq:exNmn} with the approximate eigenvalues~\eqref{eq:ml2}
+in eq.~\eqref{eq:N1i}, we obtain
+
+\begin{align}
+N_{11}^2=& 1-\frac{\left[M_D^2+M_N^2+2M_DM_N\sin(2\beta)\right]m^2_{\lambda}}{(M_D^2-M_N^2)^2}+\mathcal{O}\left( m_{\lambda}^4 \right)\nonumber\\
+N_{12}^2 =&   \frac{[\sin (2 \beta )+1] m_{\lambda }^2}{2 \left(M_N-M_D\right)^2}+\mathcal{O}\left( m_{\lambda}^4 \right)\nonumber\\
+N_{13}^2=&  -\frac{[\sin (2 \beta )-1] m_{\lambda }^2}{2 \left(M_D+M_N\right)^2}+\mathcal{O}\left( m_{\lambda}^4 \right)\,.
+\end{align}
+\begin{align}
+N_{21}^2=&\frac{m_{\lambda }^2 \left(\sin\beta  M_D+\cos\beta
+   M_N\right)^2}{\left(M_N^2-M_D^2\right)^2}+\mathcal{O}\left( m_{\lambda}^4 \right)\nonumber\\
+N_{22}^2=&\frac{1}{2}-\frac{m_{\lambda }^2 (\sin\beta+\cos\beta) \left[\cos\beta M_N-\sin\beta  \left(M_N-2 M_D\right)\right]}{4 M_D \left(M_N-M_D\right)^2}+\mathcal{O}\left( m_{\lambda}^4 \right)\nonumber\\
+   N_{23}^2=&\frac{1}{2}+\frac{m_{\lambda }^2 (\cos\beta-\sin\beta) \left[\sin\beta \left(2
+   M_D+M_N\right)+\cos\beta M_N\right]}{4 M_D \left(M_D+M_N\right)^2}+\mathcal{O}\left( m_{\lambda}^4 \right).
+\end{align}
+
+\begin{align}
+\label{eq:mixl2}
+N_{31}^2=&\left(\frac{M_{D} \cos\beta + M_{N} \sin\beta}{M_{N}^{2}- M_{D}^{2}} \right)^{2}   m_{\lambda}^{2}
++\mathcal{O}\left( m_{\lambda}^4 \right)\nonumber\\
+N_{32}^2=&\frac{1}{2}-\frac{\left[M_{N} \sin\beta - \left( M_{N}- 2 M_{D}\right) \cos\beta\right] \left(\cos\beta+\sin\beta \right)}{4 M_{D} \left(M_{N}- M_{D}\right)^{2}}\,m_{\lambda}^{2}+\mathcal{O}\left( m_{\lambda}^4 \right)  \nonumber\\
+N_{33}^2=&\frac{1}{2}- \frac{\left[M_{N} \sin\beta + \left(M_{N} + 2 M_{D}\right) \cos\beta\right] \left(\cos\beta- \sin\beta \right)}{4 M_{D} \left(M_{N} + M_{D} \right)^{2}} \,m_{\lambda}^{2}+\mathcal{O}\left( m_{\lambda}^4 \right).
+\end{align}
+In particular, with eq.~\eqref{eq:ml2} and the expressions for $N_{3i}^2$, the identity \eqref{eq:divcan}
+is satisfied up to terms of order $\mathcal{O}\left( m_{\lambda}^4
+\right)$.
